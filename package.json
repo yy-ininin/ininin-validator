@@ -1,0 +1,19 @@
+{
+  "name": "ininin-validator",
+  "version": "1.0.0",
+  "description": "表单验证工具类，包含整数验证、小数验证、电话号码验证",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yy-ininin/ininin-validator.git"
+  },
+  "author": "ininin.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yy-ininin/ininin-validator/issues"
+  },
+  "homepage": "https://github.com/yy-ininin/ininin-validator#readme"
+}

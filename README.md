@@ -1,5 +1,5 @@
 # ininin-validator
-表单验证工具类
+表单验证工具类，包含整数验证、小数验证、电话号码验证
 
 # install
 npm i ininin-validator
