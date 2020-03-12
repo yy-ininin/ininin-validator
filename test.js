@@ -1,6 +1,5 @@
 const validator = require('./index')
 
-console.log("1、验证整数：")
 const validMsg = validator.validInteger({value: 0, field: '年龄', minimum: 1})
 console.log(validMsg)
 

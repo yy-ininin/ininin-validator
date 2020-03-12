@@ -19,7 +19,7 @@ module.exports = {
      * @param {Boolean} [opts.thanEqual] 是否为开区间（大于等于/小于等于），默认true
      * @returns {String} 验证信息
      */
-    validInteger: (opts) => {
+    validInteger(opts) {
         opts = opts || {}
         opts.field = opts.field == null ? '' : opts.field
         opts.required = opts.required == null ? false : opts.required
@@ -62,7 +62,7 @@ module.exports = {
      * @param {Boolean} [opts.thanEqual] 是否为开区间（大于等于/小于等于），默认true
      * @returns {String} 验证信息
      */
-    validDecimal: (opts) => {
+    validDecimal(opts) {
         opts = opts || {}
         opts.field = opts.field == null ? '' : opts.field
         opts.decimals = opts.decimals == null ? 2 : opts.decimals
@@ -115,16 +115,16 @@ module.exports = {
         }
         return msg
     },
-/**
- * 验证电话号码
- * @param {Object} opts 参数
- * @param {Number|String} opts.value 字段值
- * @param {String} [opts.field] 字段名
- * @param {Number} [opts.mode] 模式，默认0，0：手机和座机，1：手机，2：座机
- * @param {Boolean} [opts.required] 是否必填，默认false
- * @returns {String} 验证信息
- */
-    validPhone: (opts) => {
+    /**
+     * 验证电话号码
+     * @param {Object} opts 参数
+     * @param {Number|String} opts.value 字段值
+     * @param {String} [opts.field] 字段名
+     * @param {Number} [opts.mode] 模式，默认0，0：手机和座机，1：手机，2：座机
+     * @param {Boolean} [opts.required] 是否必填，默认false
+     * @returns {String} 验证信息
+     */
+    validPhone(opts) {
         opts = opts || {}
         opts.field = opts.field == null ? '' : opts.field
         opts.mode = opts.mode == null ? 0 : opts.mode
