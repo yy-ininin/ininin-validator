@@ -6,34 +6,8 @@
  * @version 1.1
  * @since 2016/2/22
  * @constructor
- *
- * @author shlijian@ininin.com
- * @version 1.1.1
- * @since 2020/3/13
- * @description 去除空格
  */
 module.exports = {
-    /**
-     * 去除空格
-     * @param  {str}  str 字符串 必填
-     * @param  {type}  type:  1-所有空格  2-前后空格  3-前空格 4-后空格
-     * @return {String} 字符串
-     */
-    trim(str, type) {
-        type = type || 1;
-        switch (type) {
-            case 1:
-                return str.replace(/\s+/g, "");
-            case 2:
-                return str.replace(/(^\s*)|(\s*$)/g, "");
-            case 3:
-                return str.replace(/(^\s*)/g, "");
-            case 4:
-                return str.replace(/(\s*$)/g, "");
-            default:
-                return str;
-        }
-    },
     /**
      * 验证整数
      * @param {Object} opts 参数

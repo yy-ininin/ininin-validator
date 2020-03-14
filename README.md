@@ -63,22 +63,3 @@ const validMsg = validator.validPhone({ value: "1281234567", field: "手机号" 
 console.log(validMsg);
 // 手机号格式有误
 
-/**
- * 去除空格
- * @param  {str}  str 字符串 必填
- * @param  {type}  type:  1-所有空格  2-前后空格  3-前空格 4-后空格
- * @return {String} 字符串
- */
-let str1 = " A A "
-validator.trim(str1, 1)
-// "AA"
-
-validator.trim(str1, 2)
-// "A A"
-
-validator.trim(str1, 3)
-// "A A "
-
-validator.trim(str1, 4)
-// " A A"
-
